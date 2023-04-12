@@ -1,0 +1,6 @@
+usr/bin/to-camel /usr/bin
+usr/bin/to-kebab /usr/bin
+usr/bin/to-lower-camel /usr/bin
+usr/bin/to-screaming-kebab /usr/bin
+usr/bin/to-screaming-snake /usr/bin
+usr/bin/to-snake /usr/bin

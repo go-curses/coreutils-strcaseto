@@ -94,3 +94,8 @@ install-shortlinks: install-symlinks
 install-caselinks: SYMLINKS_PREFIX=
 install-caselinks: SYMLINKS_SUFFIX=
 install-caselinks: install-symlinks
+
+#: begin debian packaging branch changes
+-include Debian.mk
+export
+#: end debian packaging branch changes

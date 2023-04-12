@@ -1,0 +1,6 @@
+strcaseto for Debian
+-----------------
+
+The strcaseto project only supports arm64 and amd64 CPU architectures.
+
+ -- The Go-Curses Team <go.enjin.org+curses@gmail.com>, Tue, 11 Apr 2023 20:42:54 -0400

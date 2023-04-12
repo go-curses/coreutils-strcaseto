@@ -1,0 +1,57 @@
+Source: strcaseto
+Section: go-curses
+Priority: optional
+Maintainer: The Go-Curses Team <go.enjin.org+curses@gmail.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://go-curses.org
+Vcs-Browser: https://github.com/go-curses/coreutils-strcaseto
+Vcs-Git: https://github.com/go-curses/coreutils-strcaseto.git
+Rules-Requires-Root: no
+
+Package: strcaseto
+Architecture: any
+Description: Convert strings to a specific case such as CamelCase or SCREAMING-KEBAB
+ Simple command line utility to help with converting strings from whatever strcase
+ they are to a specific case such as CamelCase, snake_case, kebab-case and others.
+
+Package: strcaseto-shortlinks
+Architecture: any
+Depends: strcaseto
+Description: Convert strings to a specific case such as CamelCase or SCREAMING-KEBAB
+ Simple command line utility to help with converting strings from whatever strcase
+ they are to a specific case such as CamelCase, snake_case, kebab-case and others.
+ .
+ This package adds the following symlinks to strcaseto:
+ .
+  * to-camel
+  * to-kebab
+  * to-lower-camel
+  * to-screaming-kebab
+  * to-screaming-snake
+  * to-snake
+ .
+ Using these symlinks requires no command line flags to operate. Simply pass the
+ list of strings to convert as individual arguments or one per line of standard
+ input.
+
+Package: strcaseto-caselinks
+Architecture: any
+Depends: strcaseto
+Description: Convert strings to a specific case such as CamelCase or SCREAMING-KEBAB
+ Simple command line utility to help with converting strings from whatever strcase
+ they are to a specific case such as CamelCase, snake_case, kebab-case and others.
+ .
+ This package is an even shorter version of strcaseto-shortlinks and adds the
+ following symlinks to strcaseto:
+ .
+  * camel
+  * kebab
+  * lower-camel
+  * screaming-kebab
+  * screaming-snake
+  * snake
+ .
+ Using these symlinks requires no command line flags to operate. Simply pass the
+ list of strings to convert as individual arguments or one per line of standard
+ input.

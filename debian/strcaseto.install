@@ -1,0 +1,2 @@
+etc/bash_completion.d/strcaseto /etc/bash_completion.d
+usr/bin/strcaseto /usr/bin
